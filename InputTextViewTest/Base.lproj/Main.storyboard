@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="弹出键盘" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTM-Fj-Ogy">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="8E2-3L-UBV"/>
+                                    <constraint firstAttribute="height" constant="30" id="kUm-oy-mdp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8E2-3L-UBV"/>
+                                        <exclude reference="kUm-oy-mdp"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="8E2-3L-UBV"/>
+                                        <include reference="kUm-oy-mdp"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ggD-Qu-Cbf"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajh-wr-QjL">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="0d3-NY-tCK"/>
+                                    <constraint firstAttribute="height" constant="30" id="STO-Pr-Jic"/>
+                                </constraints>
+                                <state key="normal" title="弹出"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0d3-NY-tCK"/>
+                                        <exclude reference="STO-Pr-Jic"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="0d3-NY-tCK"/>
+                                        <include reference="STO-Pr-Jic"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pmh-Lc-Cca"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ajh-wr-QjL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ieb-db-xVI"/>
+                            <constraint firstItem="BTM-Fj-Ogy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="53" id="rjW-Fd-Oxv"/>
+                            <constraint firstItem="BTM-Fj-Ogy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rl8-zb-Iuu"/>
+                            <constraint firstItem="Ajh-wr-QjL" firstAttribute="top" secondItem="BTM-Fj-Ogy" secondAttribute="bottom" constant="86" id="yCo-d6-cPr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="BTM-Fj-Ogy"/>
+                                <exclude reference="Ajh-wr-QjL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="rjW-Fd-Oxv"/>
+                                <exclude reference="rl8-zb-Iuu"/>
+                                <exclude reference="ieb-db-xVI"/>
+                                <exclude reference="yCo-d6-cPr"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="BTM-Fj-Ogy"/>
+                                <include reference="Ajh-wr-QjL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="rjW-Fd-Oxv"/>
+                                <include reference="rl8-zb-Iuu"/>
+                                <include reference="ieb-db-xVI"/>
+                                <include reference="yCo-d6-cPr"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="TF" destination="BTM-Fj-Ogy" id="fhJ-Ue-7pA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="426"/>
+        </scene>
+    </scenes>
+</document>
