@@ -36,6 +36,7 @@
 -(void)awakeFromNib
 {
 
+    [super awakeFromNib];
     [self initKeyboardObserver];
     self.MAXLength=300;
 }
@@ -105,7 +106,7 @@
 - (void)textViewDidChange:(UITextView *)textView;
 {
     if (self.textView.text.length>0) {
-        [self.publishBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        [self.publishBtn setTitleColor:[UIColor colorWithRed:255/255 green:161/255 blue:85/255 alpha:1] forState:UIControlStateNormal];
     }
     else
     {
