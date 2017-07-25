@@ -1,17 +1,17 @@
 //
-//  InputTextView1.m
+//  InputTextView.m
 //  模仿优酷的文本输入框
 //
 //  Created by     songguolin on 16/2/16.
 //  Copyright © 2016年 SYF. All rights reserved.
 //
 
-#import "InputTextView1.h"
+#import "InputTextView.h"
 
 #define MAINSCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 #define MAINSCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define DEFAULT_HEIGHT (150)
-@interface InputTextView1 ()
+@interface InputTextView ()
 {
     UIControl * _overView;
     BOOL      _isKeyboardShow;
@@ -24,7 +24,7 @@
     
 }
 @end
-@implementation InputTextView1
+@implementation InputTextView
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -40,9 +40,9 @@
     [self initKeyboardObserver];
     self.MAXLength=300;
 }
-+(instancetype)creatInputTextView1
++(instancetype)creatInputTextView
 {
-    InputTextView1 * input=[[[NSBundle mainBundle] loadNibNamed:@"InputTextView1" owner:nil options:nil] lastObject];
+    InputTextView * input=[[[NSBundle mainBundle] loadNibNamed:@"InputTextView" owner:nil options:nil] lastObject];
     [input setup];
     return input;
 }

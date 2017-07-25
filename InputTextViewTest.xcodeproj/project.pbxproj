@@ -15,8 +15,8 @@
 		DEB484A21C72DC36004E0F3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB484A01C72DC36004E0F3D /* LaunchScreen.storyboard */; };
 		DEB484AD1C72DC36004E0F3D /* InputTextViewTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB484AC1C72DC36004E0F3D /* InputTextViewTestTests.m */; };
 		DEB484B81C72DC36004E0F3D /* InputTextViewTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB484B71C72DC36004E0F3D /* InputTextViewTestUITests.m */; };
-		DEB484CE1C72DC47004E0F3D /* InputTextView1.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB484CA1C72DC47004E0F3D /* InputTextView1.m */; };
-		DEB484CF1C72DC47004E0F3D /* InputTextView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEB484CB1C72DC47004E0F3D /* InputTextView1.xib */; };
+		DEB484CE1C72DC47004E0F3D /* InputTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB484CA1C72DC47004E0F3D /* InputTextView.m */; };
+		DEB484CF1C72DC47004E0F3D /* InputTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEB484CB1C72DC47004E0F3D /* InputTextView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +53,9 @@
 		DEB484B31C72DC36004E0F3D /* InputTextViewTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InputTextViewTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB484B71C72DC36004E0F3D /* InputTextViewTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputTextViewTestUITests.m; sourceTree = "<group>"; };
 		DEB484B91C72DC36004E0F3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEB484C91C72DC47004E0F3D /* InputTextView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputTextView1.h; sourceTree = "<group>"; };
-		DEB484CA1C72DC47004E0F3D /* InputTextView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputTextView1.m; sourceTree = "<group>"; };
-		DEB484CB1C72DC47004E0F3D /* InputTextView1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputTextView1.xib; sourceTree = "<group>"; };
+		DEB484C91C72DC47004E0F3D /* InputTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputTextView.h; sourceTree = "<group>"; };
+		DEB484CA1C72DC47004E0F3D /* InputTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputTextView.m; sourceTree = "<group>"; };
+		DEB484CB1C72DC47004E0F3D /* InputTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputTextView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,9 +149,9 @@
 		DEB484C51C72DC47004E0F3D /* InputTextView */ = {
 			isa = PBXGroup;
 			children = (
-				DEB484C91C72DC47004E0F3D /* InputTextView1.h */,
-				DEB484CA1C72DC47004E0F3D /* InputTextView1.m */,
-				DEB484CB1C72DC47004E0F3D /* InputTextView1.xib */,
+				DEB484C91C72DC47004E0F3D /* InputTextView.h */,
+				DEB484CA1C72DC47004E0F3D /* InputTextView.m */,
+				DEB484CB1C72DC47004E0F3D /* InputTextView.xib */,
 			);
 			path = InputTextView;
 			sourceTree = "<group>";
@@ -261,7 +261,7 @@
 			files = (
 				DEB484A21C72DC36004E0F3D /* LaunchScreen.storyboard in Resources */,
 				DEB4849F1C72DC36004E0F3D /* Assets.xcassets in Resources */,
-				DEB484CF1C72DC47004E0F3D /* InputTextView1.xib in Resources */,
+				DEB484CF1C72DC47004E0F3D /* InputTextView.xib in Resources */,
 				DEB4849D1C72DC36004E0F3D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +289,7 @@
 			files = (
 				DEB4849A1C72DC36004E0F3D /* ViewController.m in Sources */,
 				DEB484971C72DC36004E0F3D /* AppDelegate.m in Sources */,
-				DEB484CE1C72DC47004E0F3D /* InputTextView1.m in Sources */,
+				DEB484CE1C72DC47004E0F3D /* InputTextView.m in Sources */,
 				DEB484941C72DC36004E0F3D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

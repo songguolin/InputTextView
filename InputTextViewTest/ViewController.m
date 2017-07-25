@@ -8,10 +8,10 @@
 
 #import "ViewController.h"
 
-#import "InputTextView1.h"
+#import "InputTextView.h"
 
 #define DefineWeakSelf __weak __typeof(self) weakSelf = self
-@interface ViewController ()<InputTextView1Delgate,UITextFieldDelegate>
+@interface ViewController ()<InputTextViewDelgate,UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *TF;
 
 
@@ -36,19 +36,19 @@
 //    [self.input.textView becomeFirstResponder];
     
 //    方法2
-        InputTextView1 * input=[InputTextView1 creatInputTextView1];
+        InputTextView * input=[InputTextView creatInputTextView];
         input.delegate=self;
         [input show];
     
 }
-#pragma mark InputTextView1Delgate
+#pragma mark InputTextViewDelgate
 -(void)cancleInput1
 {
     
 }
--(void)finishedInput1:(InputTextView1 *)InputTextView1
+-(void)finishedInput1:(InputTextView *)InputTextView
 {
-    self.TF.text=InputTextView1.textView.text;
+    self.TF.text=InputTextView.textView.text;
 
 }
 
